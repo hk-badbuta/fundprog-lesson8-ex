@@ -1,2 +1,2 @@
 # fundprog-lesson8-ex
-Fundamental Programming - Lesson 8 - Exercise  
+Programming Fundamental - Lesson 8 - Exercise  
