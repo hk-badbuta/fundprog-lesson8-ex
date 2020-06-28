@@ -74,8 +74,8 @@ function interpolateColor(color1, color2, factor) {
  * Create 2D Array with random integers
  * @param {number} colSize
  * @param {number} rowSize
- * @param {number} randNumFrom
- * @param {number} randNumTo
+ * @param {number} randNumFrom (inclusive)
+ * @param {number} randNumTo (inclusive)
  * @returns {Array} 2D array
  */
 function create2dArrRandInt(colSize, rowSize, randNumFrom, randNumTo) {
@@ -84,7 +84,7 @@ function create2dArrRandInt(colSize, rowSize, randNumFrom, randNumTo) {
     for (var i = 0; i < rowSize; i++) {
         var cols = new Array(colSize);
         for (var j = 0; j < colSize; j++) {
-            var rInt = parseInt(randNumFrom + (Math.random() * range));
+            var rInt = Math.floor(randNumFrom + (Math.random() * range));
             cols[j] = rInt;
         }
         rows[i] = cols;
